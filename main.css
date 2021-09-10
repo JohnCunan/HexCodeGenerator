@@ -1,14 +1,21 @@
+h2 {
+    
+    font-family: 'Courier New', Courier, monospace;
+}
+
 div {
     display: flex;
     justify-content: center;
 }
 
 button {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
     padding: 10px 20px;
     margin: 5px;
     background-color: black;
     color:white;
     border: none;
     outline: none;
-    border-radius: 5px;
+    border-radius: 225px;
 }

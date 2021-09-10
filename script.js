@@ -10,7 +10,7 @@ function changeColor() {
         hexcode += hex_numbers[random_index];
     }
 
-    //document.getElementById("hex-code").innerHTML = hexcode;
+    document.getElementById("hex-code").innerHTML = hexcode;
     var color = '#' + hexcode;
     //button.style.backgroundColor = '#' + hexcode;
 
