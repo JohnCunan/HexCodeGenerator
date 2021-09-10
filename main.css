@@ -1,3 +1,7 @@
+body {
+    background-color: #FFFF;
+}
+
 h2 {
     
     font-family: 'Courier New', Courier, monospace;
@@ -7,6 +11,7 @@ div {
     display: flex;
     justify-content: center;
 }
+
 
 button {
     font-family: 'Courier New', Courier, monospace;
