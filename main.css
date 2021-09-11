@@ -25,6 +25,7 @@ button {
     border: 3px solid black;
     position: relative;
     z-index: 1;
+    margin-left: 3px;
 }
 
 button:hover {
