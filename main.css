@@ -16,10 +16,13 @@ button {
     margin: 5px;
     background-color: black;
     color:white;
-    border: none;
-    outline: none;
-    border-radius: 225px;
+    border-radius: 5px;
     border-color: white;
     border-width: 3px;
     border-style: solid;
+}
+
+button:hover {
+    font-size: 23px;
+    transition: 0.5s;
 }
