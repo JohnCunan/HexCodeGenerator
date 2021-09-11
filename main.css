@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@200&display=swap');
+
 body {
     background-color: #FFFF;
     text-align: center;
@@ -5,22 +7,22 @@ body {
 }
 
 h2 {
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Urbanist', sans-serif;
 }
 
 
 button {
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Urbanist', sans-serif;
     font-size: 20px;
     width: 100px;
     height: 60px;
     border: none;
-    color: white;
+    color: black;
     border-radius: 4px;
     transition: ease-out 0.3s;
     font-size: 20px;
     outline: none;
-    border: 3px solid white;
+    border: 3px solid black;
     position: relative;
     z-index: 1;
 }
