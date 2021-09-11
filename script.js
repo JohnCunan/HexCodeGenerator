@@ -10,6 +10,7 @@ function changeColor() {
     }
 
     document.getElementById("hex-code").innerHTML = hexcode;
+    btnPrimary.style.backgroundColor = '#' + hexcode;
     var color = '#' + hexcode;
 
     return color;

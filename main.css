@@ -19,4 +19,7 @@ button {
     border: none;
     outline: none;
     border-radius: 225px;
+    border-color: white;
+    border-width: 3px;
+    border-style: solid;
 }
