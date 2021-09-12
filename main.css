@@ -25,7 +25,10 @@ button {
     border: 3px solid black;
     position: relative;
     z-index: 1;
-    margin-left: 3px;
+}
+
+body, button {
+    transition: all 0.3s ease-in;
 }
 
 button:hover {

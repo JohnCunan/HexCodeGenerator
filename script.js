@@ -1,5 +1,4 @@
-let btnPrimary = document.querySelector('#primary');
-let btnCopy = document.querySelector('#copy')
+let btnChange = document.querySelector('#change');
 
 function changeColor() {
     var hex_numbers = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "A", "B", "C", "D", "E", "F"];
@@ -11,11 +10,11 @@ function changeColor() {
     }
 
     document.getElementById("hex-code").innerHTML = hexcode;
-    btnPrimary.style.backgroundColor = '#' + hexcode;
-    btnCopy.style.backgroundColor = '#' + hexcode;
+    btnChange.style.backgroundColor = '#' + hexcode;
     var color = '#' + hexcode;
 
     return color;
 }
 
-btnPrimary.addEventListener('click', () => document.body.style.backgroundColor = changeColor());
+btnChange.addEventListener('click', () =>
+    document.body.style.backgroundColor = changeColor());
