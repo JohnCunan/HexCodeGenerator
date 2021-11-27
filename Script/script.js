@@ -1,10 +1,10 @@
 const btnChange = document.querySelector('#change');
 const btnCopy = document.querySelector('#copy');
-
+let color = 0;
 
 function changeColor() {
     const hexcode = Math.floor(Math.random()*16777215).toString(16);
-    const color = '#' + hexcode;
+    color = '#' + hexcode;
 
     document.getElementById("hex-code").innerHTML = hexcode;
     document.getElementById("box").value = color;
@@ -15,11 +15,9 @@ function changeColor() {
 }
 
 function getCode() {
-    var copyText = document.getElementById("box");
     copyText.select();
     copyText.setSelectionRange(0, 99999); /* For mobile version */
-
-    navigator.clipboard.writeText(copyText.value);
+    navigator.clipboard.writeText(color);
     alert("Copied the hex code: " + copyText.value + " to the clipboard");
 }
 
