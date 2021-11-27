@@ -5,11 +5,9 @@ let color = '#FFFF';
 function changeColor() {
     const hexcode = Math.floor(Math.random()*16777215).toString(16);
     color = '#' + hexcode;
-
     document.getElementById("hex-code").innerHTML = hexcode;
     btnChange.style.backgroundColor = color;
     btnCopy.style.backgroundColor = color;
-    
     return color;
 }
 
