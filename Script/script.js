@@ -15,10 +15,13 @@ function changeColor() {
 }
 
 function getCode() {
+    var copyText = document.getElementById("box");
     copyText.select();
     copyText.setSelectionRange(0, 99999); /* For mobile version */
-    navigator.clipboard.writeText(color);
+
+    navigator.clipboard.writeText(copyText.value);
     alert("Copied the hex code: " + copyText.value + " to the clipboard");
+    
 }
 
 btnChange.addEventListener('click', () =>
