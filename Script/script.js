@@ -1,13 +1,12 @@
 const btnChange = document.querySelector('#change');
 const btnCopy = document.querySelector('#copy');
-let color = 0;
+let color = '#FFFF';
 
 function changeColor() {
     const hexcode = Math.floor(Math.random()*16777215).toString(16);
     color = '#' + hexcode;
 
     document.getElementById("hex-code").innerHTML = hexcode;
-    document.getElementById("box").value = color;
     btnChange.style.backgroundColor = color;
     btnCopy.style.backgroundColor = color;
     
@@ -15,13 +14,9 @@ function changeColor() {
 }
 
 function getCode() {
-    var copyText = document.getElementById("box");
-    copyText.select();
-    copyText.setSelectionRange(0, 99999); /* For mobile version */
-
-    navigator.clipboard.writeText(copyText.value);
-    alert("Copied the hex code: " + copyText.value + " to the clipboard");
-    
+    const dummy = $('<input>').val(color).appendTo('body').select()
+    document.execCommand('copy')
+    alert("Copied the hex code: " + color + " to the clipboard");
 }
 
 btnChange.addEventListener('click', () =>
