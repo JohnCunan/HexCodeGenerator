@@ -12,7 +12,7 @@ function changeColor() {
 }
 
 function getCode() {
-    const dummy = $('<input>').val(color).appendTo('body').select()
+    $('<input>').val(color).appendTo('body').select()
     document.execCommand('copy')
     alert("Copied the hex code: " + color + " to the clipboard");
 }
