@@ -1,17 +1,10 @@
-let btnChange = document.querySelector('#change');
-let btnCopy = document.querySelector('#copy');
-let color;
+const btnChange = document.querySelector('#change');
+const btnCopy = document.querySelector('#copy');
+
 
 function changeColor() {
-    var hex_numbers = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "A", "B", "C", "D", "E", "F"];
-    var hexcode = '';
-
-    for (var i = 0; i < 6; i++) {
-        var random_index = Math.floor(Math.random() * hex_numbers.length);
-        hexcode += hex_numbers[random_index];
-    }
-
-    color = '#' + hexcode;
+    const hexcode = Math.floor(Math.random()*16777215).toString(16);
+    const color = '#' + hexcode;
 
     document.getElementById("hex-code").innerHTML = hexcode;
     document.getElementById("box").value = color;
