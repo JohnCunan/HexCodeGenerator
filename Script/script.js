@@ -12,8 +12,9 @@ function changeColor() {
 }
 
 function getCode() {
-    const dummy = $('<input>').val(color).appendTo('body').select()
+    const dummy = $('<input>').val(color).appendTo('body').select() //Bug in Google Chrome Mobile
     document.execCommand('copy')
+    color.setSelectionRange(0, 99999); /* For mobile version */
     alert("Copied the hex code: " + color + " to the clipboard");
 }
 
